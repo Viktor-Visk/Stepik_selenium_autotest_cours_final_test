@@ -51,8 +51,8 @@ class TestUserAddToBasketFromProductPage():
     def setup(self, browser):
         link = "http://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
         chislo = random.randint(0, 1000) #генерация случайного числа для логина и пароля пользователя
-        email = "email"+str(chislo*chislo) + "@email" + str(chislo) + ".com" #генерация логина
-        password = "qwe123qwe"+str(chislo*chislo) #генерация пароля
+        email = "email"+str(chislo*chislo) + "@mail" + ".com" #генерация логина
+        password = "qwerty"+str(chislo*chislo) #генерация пароля
         page_login = LoginPage(browser, link)
         page_login.open()
         page_login.register_new_user(email, password)
